@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 export class navBar extends Component {
     render() {
@@ -16,9 +15,14 @@ export class navBar extends Component {
                                 <li className="nav-item">
                                     <a className="nav-link active" aria-current="page" href="/">Home</a>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/about">About</a>
-                                </li>
+                                <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
+                                <li className="nav-item"><a className="nav-link" href="/about">Business</a></li>
+                                <li className="nav-item"><a className="nav-link" href="/about">Entertainment</a></li>
+                                <li className="nav-item"><a className="nav-link" href="/about">General</a></li>
+                                <li className="nav-item"><a className="nav-link" href="/about">Health</a></li>
+                                <li className="nav-item"><a className="nav-link" href="/about">Science</a></li>
+                                <li className="nav-item"><a className="nav-link" href="/about">Sports</a></li>
+                                <li className="nav-item"><a className="nav-link" href="/about">Technology</a></li>
                             </ul>
                         </div>
                     </div>
