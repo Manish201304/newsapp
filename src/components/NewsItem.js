@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class NewsItem extends Component {
-  render() {
+const NewsItem = (props)=> {
     const categoryColors = {
       'sports': 'primary',
       'general': 'secondary',
@@ -11,7 +10,7 @@ export class NewsItem extends Component {
       'entertainment': 'warning',
       'business': 'info'
     };
-    let { title, description, imageUrl, newsUrl, author, date, source, category } = this.props;
+    let {description, imageUrl, newsUrl, author, date, source, category } = props;
     const badgeColorClass = categoryColors[category];
     return (
       <div className='my-3'>
@@ -32,7 +31,6 @@ export class NewsItem extends Component {
         </div>
       </div>
     )
-  }
 }
 
 export default NewsItem
